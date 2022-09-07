@@ -4,8 +4,9 @@ public class Task008 {
 
     public static class Horse {
         int x, y, id, move;
-        int[][] step = {{2,1}, {2,-1}, {-2,1}, {-2,-1}, {1,2}, {1,-2}, {-1,2}, {-1,-2}};
+        int[][] step = {{2, 1}, {2, -1}, {-2, 1}, {-2, -1}, {1, 2}, {1, -2}, {-1, 2}, {-1, -2}};
         private final Random rnd = new Random();
+
         public Horse(int x, int y) {
             this.x = x;
             this.y = y;
@@ -14,7 +15,7 @@ public class Task008 {
         }
 
         public void move(Board board) {
-            if (this.move<25) {
+            if (this.move < 25) {
                 while (true) {
                     int index = this.rnd.nextInt(8);
                     int x = this.x + this.step[index][0];
@@ -35,13 +36,13 @@ public class Task008 {
         }
     }
 
-    public static class Board{
+    public static class Board {
         int size;
         int[][] cell;
 
         public Board(int size) {
             this.size = size;
-            this.cell = new int [this.size][this.size];
+            this.cell = new int[this.size][this.size];
             for (int i = 0; i < this.size; i++)
                 for (int j = 0; j < this.size; j++) {
                     if (i == 0 && j == 0) this.cell[j][i] = -2;
@@ -56,7 +57,7 @@ public class Task008 {
         }
 
 
-        public void print(Horse horse){
+        public void print(Horse horse) {
             System.out.printf("%d ход\n", horse.move);
             for (int i = 0; i < this.size; i++) {
                 for (int j = 0; j < this.size; j++) {
@@ -74,13 +75,13 @@ public class Task008 {
         nextTurn(board, horse);
     }
 
-    public static void nextTurn(Board board, Horse horse){
-        if (horse.move<25) {
+    public static void nextTurn(Board board, Horse horse) {
+        if (horse.move < 25) {
             horse.move++;
             board.cell[horse.x][horse.y] = horse.move;
             horse.move(board);
             nextTurn(board, horse);
-        }else{
+        } else {
             board.print(horse);
         }
     }

@@ -1,9 +1,5 @@
 import java.util.ArrayList;
 
-/**
- * ������. ���������� ����� ��� �������� �� a -> b , ���� �������� k1 ��������
- * ��������� � � ���, � �������� k2 - ��������� d.
- */
 public class Task002 {
 
     static ArrayList<String> allRoutes = new ArrayList<>();
@@ -16,7 +12,6 @@ public class Task002 {
             runFunc(a * c, b, c, d, way + "*" + c + " ");
             runFunc(a + d, b, c, d, way + "+" + d + " ");
         }
-
     }
 
     static String minWay(ArrayList<String> arr) {
