@@ -15,12 +15,15 @@ public class HomeWork {
             case (6) -> System.out.printf("Задание %d еще не готово", number);
             case (7) -> Task007.main(args);
             case (8) -> {
-                System.out.println("Частный случай для доски 5*5 - не работает, универсальное решение готово");
+                System.out.println("На досках размером [5, 6, 7, 8, 9] отрабатывает идеально. Выше - 'задумывается'");
                 Task008.main(args);
             }
             case (9) -> Task009.main(args);
             case (10) -> System.out.printf("Задание %d еще не готово", number);
-            case (11) -> System.out.printf("Задание %d еще не готово", number);
+            case (11) -> {
+                System.out.println("Готов генератор лабиринтов для дальнейшего решения волновых алгоритмов");
+                Task011.main(args);
+            }
             case (12) -> System.out.printf("Задание %d еще не готово", number);
             case (13) -> System.out.printf("Задание %d еще не готово", number);
             default -> System.out.println("Такого задания нет");
