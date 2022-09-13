@@ -12,7 +12,7 @@ public class HomeWork {
             case (3) -> Task003.main(args);
             case (4) -> Task004.main(args);
             case (5) -> System.out.printf("Задание %d еще не готово", number);
-            case (6) -> System.out.printf("Задание %d еще не готово", number);
+            case (6) -> Task006.main(args);
             case (7) -> Task007.main(args);
             case (8) -> {
                 System.out.println("На досках размером [5, 6, 7, 8, 9] отрабатывает идеально. Выше - 'задумывается'");
