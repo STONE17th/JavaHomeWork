@@ -21,10 +21,10 @@ public class HomeWork {
             case (9) -> Task009.main(args);
             case (10) -> System.out.printf("Задание %d еще не готово", number);
             case (11) -> {
-                System.out.println("Готов генератор лабиринтов для дальнейшего решения волновых алгоритмов");
-                Task011.main(args);
+                System.out.println("Задание %d еще не готово\", number");
+//                Task011.main(args);
             }
-            case (12) -> System.out.printf("Задание %d еще не готово", number);
+            case (12) -> Task012.main(args);
             case (13) -> System.out.printf("Задание %d еще не готово", number);
             default -> System.out.println("Такого задания нет");
         }
