@@ -4,7 +4,6 @@ import java.util.Stack;
 public class Task012 {
 
     public static void main(String[] args) {
-        int index = 0;
         boolean trigger = true;
         Stack<Integer> error = new Stack<>();
         Stack<String> stack = new Stack<>();

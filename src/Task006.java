@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-//import static jdk.internal.logger.DefaultLoggerFinder.SharedLoggers.system;
-
 public class Task006 {
 
     public static void Divine(int[] original) {
