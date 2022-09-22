@@ -6,7 +6,7 @@ public class Task014 {
 
         public Node(int value) {
             this.value = value;
-             }
+        }
     }
     public static StringBuilder printTree(Node node, StringBuilder treeString){
         treeString.append(node.value);
@@ -28,7 +28,6 @@ public class Task014 {
             treeString.append(")");
         }
         return treeString;
-
     }
 
     public static void main(String[] args) {
@@ -52,7 +51,5 @@ public class Task014 {
 
         StringBuilder treeString = new StringBuilder();
         System.out.println(printTree(mainTree, treeString));
-
-
     }
 }

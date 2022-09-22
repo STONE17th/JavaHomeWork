@@ -23,7 +23,7 @@ public class HomeWork {
             case (11) -> Task011.main(args);
             case (12) -> Task012.main(args);
             case (13) -> System.out.printf("Задание %d еще не готово", number);
-            case (14) -> System.out.printf("Задание %d еще не готово", number);
+            case (14) -> Task014.main(args);
             case (15) -> System.out.printf("Задание %d еще не готово", number);
             case (16) -> System.out.printf("Задание %d еще не готово", number);
             case (17) -> Task017.main(args);
