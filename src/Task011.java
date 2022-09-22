@@ -5,9 +5,7 @@ import java.util.Scanner;
 
 public class Task011 {
     public static class Player{
-        int x;
-        int y;
-        int move;
+        int x, y, move;
         ArrayDeque<Cell> movement = new ArrayDeque<>();
 
         public Player(Maze maze) {

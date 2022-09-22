@@ -23,6 +23,21 @@ public class HomeWork {
             case (11) -> Task011.main(args);
             case (12) -> Task012.main(args);
             case (13) -> System.out.printf("Задание %d еще не готово", number);
+            case (14) -> System.out.printf("Задание %d еще не готово", number);
+            case (15) -> System.out.printf("Задание %d еще не готово", number);
+            case (16) -> System.out.printf("Задание %d еще не готово", number);
+            case (17) -> Task017.main(args);
+            case (18) -> Task018.main(args);
+            case (19) -> System.out.printf("Задание %d еще не готово", number);
+            case (20) -> System.out.printf("Задание %d еще не готово", number);
+            case (21) -> System.out.printf("Задание %d еще не готово", number);
+            case (22) -> Task022.main(args);
+            case (23) -> Task023.main(args);
+            case (24) -> System.out.printf("Задание %d еще не готово", number);
+            case (25) -> System.out.printf("Задание %d еще не готово", number);
+            case (26) -> System.out.printf("Задание %d еще не готово", number);
+            case (27) -> System.out.printf("Задание %d еще не готово", number);
+            case (28) -> System.out.printf("Задание %d еще не готово", number);
             default -> System.out.println("Такого задания нет");
         }
     }
